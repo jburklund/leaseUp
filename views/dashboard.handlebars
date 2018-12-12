@@ -229,7 +229,6 @@
                                 <table id="bootstrap-table" class="table table-striped">
                                     <thead>
                                         <th data-field="state" data-checkbox="true"></th>
-                                        <th data-field="id" class="text-center" style="visibility:hidden">ID</th>
                                         <th data-field="tenantName" class="text-center" data-sortable="true">Tenant</th>
                                         <th data-field="tenantSF" data-sortable="true">SF</th>
                                         <th data-field="leaseStart" data-sortable="true">Start</th>
@@ -242,12 +241,12 @@
                                         <th data-field="salesAnnual" data-sortable="true">Annual Sales</th>
                                         <th data-field="optionNotice" data-sortable="true">Option Notice</th>
                                         <th data-field="optionRent" data-sortable="true">Option Rent</th>
+                                        <th data-field="id" class="text-center" style="visibility:hidden">ID</th>
                                     </thead>
                                     <tbody>
                                         {{#each centers}} {{#each this.Tenants}}
                                         <tr>
                                             <td></td>
-                                            <td class="id" style="visibility:hidden">{{id}}</td>
                                             <td class="tenantName">{{tenantName}}</td>
                                             <td class="tenantSF">{{number tenantSF}}</td>
                                             <td>{{leaseStart}}</td>
@@ -260,6 +259,7 @@
                                             <td>{{ number annualSales }}</td>
                                             <td>{{noticeDate}}</td>
                                             <td>{{ number noticeRent }}</td>
+                                            <td class="id" style="visibility:hidden">{{id}}</td>
                                         </tr>
                                         {{/each}} {{/each}}
                                     </tbody>
