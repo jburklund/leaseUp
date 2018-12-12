@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/jmq2134/leaseUP#readme",
   "dependencies": {
+    "bcrypt": "^3.0.2",
     "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "*",
     "body-parser": "^1.18.3",
     "dotenv": "^4.0.0",
     "express": "^4.16.4",
